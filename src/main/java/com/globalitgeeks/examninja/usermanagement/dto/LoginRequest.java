@@ -1,12 +1,15 @@
 package com.globalitgeeks.examninja.usermanagement.dto;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
+@Data
+@Getter
+@Setter
 public class LoginRequest {
     private String email;
     private String password;
-
-    // Getters and Setters
     public String getEmail() {
         return email;
     }
